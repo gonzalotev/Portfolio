@@ -5,7 +5,7 @@ import { Carrousel } from "@/components";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="flex flex-col items-center justify-center h-[calc(100vh)] bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 mt-10 md:mt-0">
       <motion.div
         className="max-w-3xl px-4 md:px-8"
         initial={{ opacity: 0, y: 50 }}
@@ -13,7 +13,7 @@ const Home = () => {
         transition={{ duration: 0.5 }}
       >
         <motion.h1
-          className="text-3xl md:text-5xl font-bold mb-4 text-center"
+          className="text-3xl md:text-5xl sm:mt-10 font-bold mb-4 text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
